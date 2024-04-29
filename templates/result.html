@@ -128,19 +128,6 @@
             // 返回处理后的HTML字符串（仅包含文档body部分）
             return doc.body.innerHTML;
         }
-		function containsValidDomain(url) {
-            // 正则表达式匹配域名部分，忽略协议，允许有路径、查询或片段
-            const pattern = /(?:https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+(?:\/|$)/;
-            // 测试url是否匹配正则表达式
-            return pattern.test(url);
-        }
-
-        function cleanString(input) {
-            // 定义一个正则表达式，匹配字符串开头的空格、正反斜杠和URL协议部分
-            const regex = /^(\s+|https?:\/\/|\/+|\\+)+/i;
-            // 返回处理后的字符串
-            return input.replace(regex, '');
-        }
     </script>
 </body>
 </html>
