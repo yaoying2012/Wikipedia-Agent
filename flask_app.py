@@ -38,11 +38,3 @@ def get_wiki_article():
 @app.route('/wiki/<search>')
 def get_wiki(search):
     return render_template('result.html', search=search)
-
-
-@app.route('/external_file/<path:my_path>')
-def external_file(my_path):
-    my_path = 'https://' + my_path
-    response = requests.get(my_path)
-    content_type = response.headers['Content-Type']
-    return Response(response.content, mimetype=content_type)
