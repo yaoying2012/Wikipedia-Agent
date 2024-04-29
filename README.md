@@ -12,7 +12,6 @@ index.html会把输入的查询字符串发送到服务器，服务器通过维�
    >/home/&lt;yourUserName&gt;/wikipediaAgent/flask_app.py
 4. 删除原有配置文件；
 5. 打开bash终端，输入以下命令：
-   > git clone https://github.com/yaoying2012/wikipediaAgent.git
-
+   > git clone https://github.com/yaoying2012/wikipediaAgent.git<br>
    > pip install flask_cors
 6. 重载网站。
