@@ -8,8 +8,11 @@ index.html会把输入的查询字符串发送到服务器，服务器通过维�
 ## 部署
 1. 点击以下链接：[Pythonanywhere官网](https://www.pythonanywhere.com)；
 2. 按照提示创建一个新账户，然后登录；
-3. 新建一个flask应用；
+3. 新建一个flask应用，路径为 
+   >/home/&lt;yourUserName&gt;/wikipediaAgent/flask_app.py
 4. 删除原有配置文件；
 5. 打开bash终端，输入以下命令：
    > git clone https://github.com/yaoying2012/wikipediaAgent.git
+
+   > pip install flask_cors
 6. 重载网站。
