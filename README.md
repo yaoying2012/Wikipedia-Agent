@@ -8,10 +8,18 @@ index.html会把输入的查询字符串发送到服务器，服务器通过维�
 ## 部署
 1. 点击以下链接：[Pythonanywhere官网](https://www.pythonanywhere.com)；
 2. 按照提示创建一个新账户，然后登录；
-3. 新建一个flask应用，路径为 
-   >/home/&lt;yourUserName&gt;/wikipediaAgent/flask_app.py
+3. 新建一个flask应用；
 4. 删除原有配置文件；
 5. 打开bash终端，输入以下命令：
-   > git clone https://github.com/yaoying2012/wikipediaAgent.git<br>
-   > pip install flask_cors
+   ```
+   rm -rf /home/<yourUserName>/wikipedia-agent
+   git clone https://github.com/yaoying2012/wikipedia-agent.git /home/<yourUserName>/wikipedia-agent
+   pip install flask_cors
+   ```
+   这段命令会删除自动部署的项目，然后克隆新的项目，并安装依赖。
+
+   对于免费的用户，尤其是在中国大陆部署的用户，需要等待一段时间才能完成部署，请耐心等待。
+
+   请确保把这段代码中的<yourUserName>替换为真实的用户名，并区分大小写；
+
 6. 重载网站。
