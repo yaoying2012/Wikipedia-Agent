@@ -1,9 +1,20 @@
-from flask import Flask, request, jsonify, render_template, Response
+from flask import Flask, request, jsonify, render_template, Response, send_from_directory
 import flask_cors
 import requests
+import os
 
 app = Flask(__name__)
 flask_cors.CORS(app)
+
+working_path = os.path.split(os.path.abspath(__file__))[0]
+
+
+def full_path(file):
+    return '/'.join([working_path, file])
+
+
+static_folder_path = full_path('staticfiles')
+app.config['UPLOAD_FOLDER'] = static_folder_path
 
 
 @app.route('/')
@@ -35,6 +46,11 @@ def get_wiki_article():
         return jsonify({'error': str(e)}), 500
 
 
-@app.route('/wiki/<search>')
-def get_wiki(search):
-    return render_template('result.html', search=search)
+@app.route('/wiki/<entries>')
+def get_wiki(entries):
+    return render_template('result.html', search=entries)
+
+
+@app.route('/static_files/<filename>')
+def get_image(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)

@@ -1,0 +1,9 @@
+/* 使<h1>元素水平排列且不换行 */
+.no-wrap > h1{
+    display: inline-block;
+}
+
+/* 设置蓝色文字颜色 */
+.blue{
+    color: #0000ff;
+}
