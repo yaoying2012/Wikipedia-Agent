@@ -36,14 +36,14 @@ index.html会把输入的查询字符串发送到服务器，服务器通过维�
    <img src="https://cda.pythonanywhere.com/img/wikipediaAgentImages12.png">
    4. 输入以下命令：
    ```
-   rm -rf /home/<yourUserName>/mysite
-   git clone https://github.com/yaoying2012/wikipedia-agent.git /home/<yourUserName>/mysite
-   pip install flask_cors
+      rm -rf /home/<yourUserName>/mysite
+      git clone https://github.com/yaoying2012/wikipedia-agent.git /home/<yourUserName>/mysite
+      pip install flask_cors
    ```
    这段命令会删除自动部署的项目，然后克隆新的项目，并安装依赖。
-
+   
    对于免费的用户，尤其是在中国大陆部署的用户，需要等待一段时间才能完成部署，请耐心等待。
-
+   
    请**一定确保**把这段代码中的<yourUserName>替换为真实的用户名，并区分大小写；
    5. 等待命令执行完成;
    <img src="https://cda.pythonanywhere.com/img/wikipediaAgentImages13.png">
