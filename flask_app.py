@@ -13,7 +13,7 @@ def full_path(file):
     return '/'.join([working_path, file])
 
 
-static_folder_path = full_path('staticfiles')
+static_folder_path = full_path('static_files')
 app.config['UPLOAD_FOLDER'] = static_folder_path
 
 
