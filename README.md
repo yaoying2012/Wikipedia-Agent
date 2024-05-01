@@ -10,8 +10,7 @@ index.html会把输入的查询字符串发送到服务器，服务器通过维�
    <img src="">
 2. 按照提示创建一个新账户，然后登录；
 3. 新建一个flask应用；
-4. 删除原有配置文件；
-5. 打开bash终端，输入以下命令：
+4. 打开bash终端，输入以下命令：
    ```
    rm -rf /home/<yourUserName>/wikipedia-agent
    git clone https://github.com/yaoying2012/wikipedia-agent.git /home/<yourUserName>/mysite
@@ -23,4 +22,4 @@ index.html会把输入的查询字符串发送到服务器，服务器通过维�
 
    请确保把这段代码中的<yourUserName>替换为真实的用户名，并区分大小写；
 
-6. 重载网站。
+5. 重载网站。
