@@ -12,7 +12,7 @@ index.html会把输入的查询字符串发送到服务器，服务器通过维�
 3. 新建一个flask应用；
 4. 打开bash终端，输入以下命令：
    ```
-   rm -rf /home/<yourUserName>/wikipedia-agent
+   rm -rf /home/<yourUserName>/mysite
    git clone https://github.com/yaoying2012/wikipedia-agent.git /home/<yourUserName>/mysite
    pip install flask_cors
    ```
